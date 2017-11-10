@@ -32,7 +32,7 @@ class PickMediaActivity : AppCompatActivity() {
 
     private fun resultMesage(resultCode: Int, path: String) {
         if (resultCode == RPickMedia.PICK_FAILED) {
-            throw SecurityException("not granted permission to pick media files")
+            return
         }
 
         val realPath = Uri.parse(path) getRealPath this@PickMediaActivity
