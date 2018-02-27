@@ -62,8 +62,8 @@ class IndexActivity : AppCompatActivity() {
 
         val permissionArray = when (item.categoryItem) {
             CategoryItem.DEVICEID -> arrayOf(Manifest.permission.READ_PHONE_STATE)
-            CategoryItem.PICKMEDIA -> arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                    Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA)
+//            CategoryItem.PICKMEDIA -> arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE,
+//                    Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA)
             else -> null
         }
 
